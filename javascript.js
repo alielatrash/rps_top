@@ -84,9 +84,11 @@ console.log("Computer Score = " + computerScore);
 
 if (playerScore > computerScore) {
     console.log("YOU WIN! The final score is " + playerScore + " to " + computerScore);
+    alert("YOU WIN! The final score is " + playerScore + " to " + computerScore);
 }
     else if (computerScore > playerScore) {
     console.log("PC WINS! The final score is " + computerScore + " to " + playerScore);
+    alert("PC WINS! The final score is " + computerScore + " to " + playerScore);
 } else {console.log("IT'S A TIE!")}
 
 

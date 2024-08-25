@@ -10,9 +10,9 @@ let computerScore = 0;
 try {
 
 
-for (roundCount = 0; roundCount <= 5; roundCount++) {
+for (roundCount = 1; roundCount <= 5; roundCount++) {
 
-
+console.log("Round: " + roundCount); 
 
 // 1. prompt player to input either rock, paper or scissors (make sure it's case insensitive) 
 playerInput = prompt("Enter your choice of rock, paper or scissors",);

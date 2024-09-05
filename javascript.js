@@ -42,10 +42,8 @@ if (computerInputNum >= 1 && computerInputNum <= 3) {
     console.log("Computer Chose " + computerInputFinal.toUpperCase());
     
 
-function scoreCounter(var1,var2) {
     if (playerInputFinal.toLowerCase() == "rock" && computerInputFinal.toLowerCase() == "rock") {
         console.log("It's a tie!");
-        return 0;
     } else if (playerInputFinal.toLowerCase() == "rock" && computerInputFinal.toLowerCase() == "paper") {
         console.log("Paper beats Rock! PC WINS");
         computerScore++;
@@ -57,13 +55,11 @@ function scoreCounter(var1,var2) {
         playerScore++;
     } else if (playerInputFinal.toLowerCase() == "paper" && computerInputFinal.toLowerCase() == "paper") {
         console.log("It's a Tie!");
-        return 0;
     } else if (playerInputFinal.toLowerCase() == "paper" && computerInputFinal.toLowerCase() == "scissors") {
         console.log("Scissors beat Paper! PC WIN")
         computerScore++;
     } else if (playerInputFinal.toLowerCase() == "scissors" && computerInputFinal.toLowerCase() == "scissors") {
         console.log("It's a Tie!")
-        return 0;
     } else if (playerInputFinal.toLowerCase() == "scissors" && computerInputFinal.toLowerCase() == "paper") {
         console.log("Scissors beats Paper! YOU WIN")
         playerScore++;
@@ -71,10 +67,8 @@ function scoreCounter(var1,var2) {
         console.log("Rock beats Paper! PC WIN")
         computerScore++;
     } else console.log("Something's Wrong!")
-}
 
 
-scoreCounter(playerInputFinal,computerInputFinal);
 console.log("Player Score = " + playerScore);
 console.log("Computer Score = " + computerScore);
 
